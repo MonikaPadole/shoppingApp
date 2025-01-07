@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping App</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body and background */
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Navigation menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f9;
+        }
+
+        /* Main content section */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .category-list {
+            flex-basis: 20%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-list h3 {
+            margin-bottom: 15px;
+        }
+
+        .category-list ul {
+            list-style-type: none;
+        }
+
+        .category-list ul li {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .category-list ul li:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .product-section {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .product-card {
+            background-color: white;
+            width: 23%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h4 {
+            margin: 10px 0;
+            font-size: 1.3em;
+        }
+
+        .product-card .price {
+            font-size: 1.1em;
+            color: #d9534f;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .category-list {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+
+            .product-card {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .product-card {
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .category-list {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Shopping Hub</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main-content">
+    <!-- Categories Section -->
+    <div class="category-list">
+        <h3>Categories</h3>
+        <ul>
+            <li>Electronics</li>
+            <li>Clothing</li>
+            <li>Accessories</li>
+            <li>Home Decor</li>
+            <li>Sports</li>
+        </ul>
+    </div>
+
+    <!-- Featured Products Section -->
+    <div class="product-section">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 1">
+            <h4>Smartphone XYZ</h4>
+            <p class="price">$499.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 2">
+            <h4>Designer Jacket</h4>
+            <p class="price">$129.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 3">
+            <h4>Luxury Watch</h4>
+            <p class="price">$249.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 4">
+            <h4>Bluetooth Headphones</h4>
+            <p class="price">$79.99</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Shopping Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

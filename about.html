@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Shopping Hub</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body and background */
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Navigation menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f9;
+        }
+
+        /* About Us Section */
+        .about-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .about-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-container p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Mission Statement Section */
+        .mission {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .mission h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .mission p {
+            font-size: 1.1em;
+            text-align: center;
+            color: #555;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            width: 30%;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .team-member h4 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .team-member p {
+            color: #777;
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Shopping Hub</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- About Us Section -->
+<div class="about-container">
+    <h2>About Us</h2>
+    <p>Welcome to Shopping Hub! We are a team of passionate professionals who believe in providing the best shopping experience for our customers. Our mission is to bring quality products to your doorstep, making shopping easy, fun, and affordable.</p>
+
+    <!-- Mission Statement Section -->
+    <div class="mission">
+        <h3>Our Mission</h3>
+        <p>At Shopping Hub, our mission is to revolutionize online shopping by offering a diverse range of high-quality products, exceptional customer service, and competitive prices. We aim to connect buyers with the best brands and help them make informed purchasing decisions.</p>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team">
+        <div class="team-member">
+            <img src="https://via.placeholder.com/200x250" alt="Team Member 1">
+            <h4>John Doe</h4>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/200x250" alt="Team Member 2">
+            <h4>Jane Smith</h4>
+            <p>Marketing Manager</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/200x250" alt="Team Member 3">
+            <h4>Emily Johnson</h4>
+            <p>Customer Support Lead</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Shopping Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
